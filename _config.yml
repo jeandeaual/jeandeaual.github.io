@@ -1,0 +1,28 @@
+title: Alexis Jeandeau
+description: >-
+  Personal website.
+url: https://jeandeaual.github.io
+repository: jeandeaual/jeandeaual.github.io
+lang: en-US
+exclude:
+  - config.yml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - spec
+  - .rspec
+  - .rubocop.yml
+  - .solargraph.yml
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .bundle/
+  - .github/
+  - .vscode/
+plugins:
+  - jekyll-minifier
+  - jekyll-seo-tag
+jekyll-minifier:
+  remove_intertag_spaces: true
