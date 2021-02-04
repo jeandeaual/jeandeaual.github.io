@@ -3,11 +3,12 @@
 ---
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
 
 body {
   background-color: #fff;
   padding: 50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 'Noto Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   color: #727272;
   font-weight: 400;
 }
@@ -58,9 +59,9 @@ a:hover small {
   color: #777;
 }
 
-.wrapper {
-  width: 860px;
-  margin:0 auto;
+#wrapper {
+  width: 900px;
+  margin: 0 auto;
 }
 
 blockquote {
@@ -71,7 +72,7 @@ blockquote {
 }
 
 code, pre {
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  font-family: 'Fira Code Sans', 'Monaco', 'Bitstream Vera Sans Mono', 'Lucida Console', 'Terminal', 'Consolas', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', 'monospace';
   color: #333;
 }
 
@@ -80,7 +81,7 @@ pre {
   background: #f8f8f8;
   border-radius: 5px;
   border: 1px solid #e5e5e5;
-  overflow-x:  auto;
+  overflow-x: auto;
 }
 
 table {
@@ -108,7 +109,7 @@ img {
 }
 
 header {
-  width: 270px;
+  width: 300px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -199,8 +200,14 @@ footer {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+#lang-selector {
+  position: relative;
+  float: right;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 @media print, screen and (max-width: 960px) {
-  div.wrapper {
+  div#wrapper {
     width: auto;
     margin: 0;
   }

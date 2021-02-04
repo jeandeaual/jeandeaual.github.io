@@ -1,0 +1,9 @@
+resume: 履歴書
+job_description: ソフトウェアエンジニア
+site_description: 個人ウェッブサイト
+not_found: ページが見つかりませんでした
+not_found_description: 要求されたページが見つかりませんでした。
+langs:
+  en: 英語
+  fr: フランス語
+  ja: 日本語

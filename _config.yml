@@ -1,8 +1,10 @@
 title: Alexis Jeandeau
-description: >-
-  Personal website.
-url: https://jeandeaual.github.io
+url: https://alexis.jeandeau.fr
 lang: en-US
+languages:
+  - en
+  - fr
+  - ja
 exclude:
   - config.yml
   - Gemfile
@@ -22,6 +24,7 @@ exclude:
   - .vscode/
 plugins:
   - jekyll-minifier
+  - jekyll-multiple-languages-plugin
   - jekyll-seo-tag
 jekyll-minifier:
   remove_intertag_spaces: true

@@ -1,0 +1,9 @@
+resume: Resume
+job_description: Software Engineer
+site_description: Personal website
+not_found: Page not found
+not_found_description: The requested page could not be found.
+langs:
+  en: English
+  fr: French
+  ja: Japanese
