@@ -1,5 +1,17 @@
 title: Alexis Jeandeau
+tagline: Personal website
+description: Alexis Jeandeau's personal website
 url: https://alexis.jeandeau.fr
+author: jeandeaual
+logo: android-chrome-192x192.png
+social:
+  name: Alexis Jeandeau
+  links:
+    - https://www.linkedin.com/in/alexis-jeandeau
+    - https://github.com/jeandeaual
+    - https://gitlab.com/jeandeaual
+    - https://twitter.com/jeandeaual
+    - https://www.facebook.com/alexis.jeandeau/
 lang: en-GB
 default_lang: en-GB
 languages:
