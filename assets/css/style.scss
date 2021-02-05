@@ -109,6 +109,8 @@ img {
 }
 
 $header-width: 280px;
+$section-width: 470px;
+$lang-selector-width: 130px;
 
 header {
   width: $header-width;
@@ -178,7 +180,7 @@ strong {
 }
 
 section {
-  width: 480px;
+  width: $section-width;
   float: right;
   padding-bottom: 50px;
 }
@@ -203,6 +205,7 @@ footer {
 }
 
 #lang-selector {
+  width: $lang-selector-width;
   position: relative;
   float: right;
   -webkit-font-smoothing: subpixel-antialiased;
