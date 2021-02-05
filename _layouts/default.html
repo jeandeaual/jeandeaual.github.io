@@ -1,18 +1,13 @@
-{%- assign default_lang = "en" -%}
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: default_lang }}">
+<html lang="{{ site.lang | default: site.default_lang }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- seo -%}
-    {%- comment -%}
-      CSS stylesheet
-    {%- endcomment -%}
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="{% link assets/css/style.scss %}">
-    {%- comment -%}
-      Favicon
-    {%- endcomment -%}
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% link apple-touch-icon.png %}">
     <link rel="icon" type="image/svg+xml" href="{% link favicon.svg %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% link favicon-32x32.png %}">
@@ -27,27 +22,24 @@
     <div id="wrapper">
       <div id="lang-selector">
         <!-- Adds links to other languages -->
+        <ul>
         {%- for lang in site.languages -%}
           {%- unless site.lang == lang -%}
-            {%- capture svg_file_path -%}assets/images/{{ lang }}.svg{%- endcapture -%}
-
-            {%- if lang == site.default_lang and site.default_locale_in_subfolder != true -%}
-              <a href="{{ site.baseurl_root}}{{ page.url }}"><img class="flag" src="{% link {{ svg_file_path }} %}" alt="{%t langs.{{ lang }} %}" height="24" width="40" /></a>
-            {%- else -%}
-              <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}"><img class="flag" src="{% link {{ svg_file_path }} %}" alt="{%t langs.{{ lang }} %}" height="24" width="40" /></a>
-            {%- endif -%}
-
-            {%- assign next = forloop.index | plus: 1 -%}
-
-            {%- if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length -%}
-              <span class="separator">&nbsp;</span>
-            {%- endif -%}
+            <li>
+              {%- if lang == site.default_lang and site.default_locale_in_subfolder != true -%}
+                <a href="{{ site.baseurl_root}}{{ page.url }}">
+              {%- else -%}
+                <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">
+              {%- endif -%}
+              <img class="flag" src="{% link assets/images/{{ lang }}.svg %}" alt="{%t langs.{{ lang }} %}" height="24" width="40" /></a>
+            </li>
           {%- endunless -%}
         {%- endfor -%}
+        </ul>
       </div>
       <header>
         <h1><a href="{{ site.baseroot_url }}">
-        {%- if site.lang == "ja" -%}
+        {%- if site.lang == "ja-JP" -%}
           <ruby>Jeandeau Alexis<rp> (</rp><rt>ジャンドー・アレクシ</rt><rp>)</rp></ruby></a></h1>
         {%- else -%}
           Alexis Jeandeau</a></h1>

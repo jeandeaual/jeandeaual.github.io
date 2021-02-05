@@ -108,8 +108,10 @@ img {
   max-width: 100%;
 }
 
+$header-width: 280px;
+
 header {
-  width: 300px;
+  width: $header-width;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -122,7 +124,7 @@ ul.downloads {
   background:  #f4f4f4;
   border-radius: 5px;
   border: 1px solid #e0e0e0;
-  width: 270px;
+  width: $header-width;
 }
 
 .downloads li {
@@ -151,7 +153,7 @@ ul.downloads {
 }
 
 .downloads a:hover, .downloads a:focus {
-  color: #675C5C;
+  color: #675c5c;
   font-weight: bold;
 }
 
@@ -176,7 +178,7 @@ strong {
 }
 
 section {
-  width: 500px;
+  width: 480px;
   float: right;
   padding-bottom: 50px;
 }
@@ -193,7 +195,7 @@ hr {
 }
 
 footer {
-  width: 270px;
+  width: $header-width;
   float: left;
   position: fixed;
   bottom: 50px;
@@ -204,6 +206,21 @@ footer {
   position: relative;
   float: right;
   -webkit-font-smoothing: subpixel-antialiased;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    width: 50%;
+    padding: 1px;
+    position: relative;
+
+    img {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+  }
 }
 
 @media print, screen and (max-width: 960px) {
